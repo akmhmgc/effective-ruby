@@ -7,5 +7,6 @@ hash1[:hoge].equal?(hash1[:fuga]) #=> true
 hash2 = Hash.new{[]}
 hash2[:hoge].equal?(hash2[:fuga]) #=> false
 
+# 評価されたブロックに対して << 'hogeしているだけ
 hash2[:hoge] << 'hoge'
-p hash2[:hoge]
+hash2[:hoge] #=> []
